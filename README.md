@@ -10,7 +10,7 @@ Features and Functionality:
 -- filter Input values
 
 Technologies Used:
--- HTML, CSS and JavaScript.
+-- HTML, CSS and JavaScript, Python(Flask), MySQL.
 
 Contact Information:
 Joseph Inwumoh
