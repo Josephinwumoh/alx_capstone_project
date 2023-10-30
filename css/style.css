@@ -1,0 +1,82 @@
+
+/* css styling */
+
+:root 
+{
+    --spacing-small: 10px;
+    --spacing-medium: 15px;
+    --spacing-large: 25px; 
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    height: 100vh;
+}
+
+.container
+{
+    width: 70%;
+    max-width: 500px;
+    background-color: darkgreen;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: var(--spacing-small);
+    padding: var(--spacing-medium);
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+    padding-bottom: var(--spacing-small);
+    background-color: rgba(255, 0, 0, 0.247);
+}
+
+.Syntax-house
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-large);
+}
+
+.Syntax-house input
+{
+    padding: var(--spacing-small);
+    font-size: var(--spacing-medium);
+    border: 2px solid rgb(163, 37, 37);
+    border-radius: var(--spacing-small);
+}
+
+button
+{
+    padding: var(--spacing-medium);
+    font-size: var(--spacing-medium);
+    background-color: rgb(123, 255, 0);
+    color: white;
+    border: none;
+    border-radius: var(--spacing-small);
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+
+li
+{
+    margin: var(--spacing-small);
+    padding: var(--spacing-small);
+    background-color: chocolate;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
