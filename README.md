@@ -1,16 +1,17 @@
 Project Overview:
-A Task Manager Application: This provides information about running applications for Daily Income, Date, Time and Cash items purchases.
+A Task Manager Application: This provides information about running applications for New, Completed and Deleted Tasks.
 
 Features and Functionality:
 -- Validation of Tasks
--- Start Tasks
--- Update Tasks
--- Change tasks
--- Mark Task completed
--- filter Input values
+-- Movement 
+-- Date filter
+-- Time filter
+-- New Tasks
+-- Completed Tasks
+-- Deleted tasks
 
 Technologies Used:
--- HTML, CSS and JavaScript, Python(Flask), MySQL.
+-- HTML, CSS(Front-end) and JavaScript(Back-end).
 
 Contact Information:
 Joseph Inwumoh
