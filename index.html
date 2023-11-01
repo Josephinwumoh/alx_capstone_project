@@ -3,32 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To_Do_Lists</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Task Manager Application</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <main>
+        <!-- Task Manager Application-->
+        <section>
+            <h1 class="heading">Task Manager Application</h1>
+            <div class="container">
+                <div class="unit-group">
+                    <div class="unit-control">
+                        <label for="Movement">Movement</label>
+                        <input type="text" id="movement-field">
+                    </div>
+                    <div class="unit-control">
+                        <label for="Date">Date</label>
+                        <input type="date" id="date-field">
+                    </div>
+                </div>
 
-    <div class="container">
-        <h1>Welcome! Please Enter Task </h1>
-        <div class="Syntax-house">
-            <input type="text" id="taskInput" placeholder="Please enter your task">
-            <input type="date" id="dueDateInput">
-            <button id="AddTaskBtn">AddTask</button>
+                <div class="unit-group">
+                    <div class="unit-control">
+                        <label for="Time">Time</label>
+                        <input type="time" id="time-field">
+                    </div>
+                </div>
+                    
+                <div class="unit-group">
+                    <div class="unit-control">
+                        <input type="button" class="btn-primary" id="task-form-btn" value="Add Task">
+                </div>
 
-        </div>
+                </div>
+            </div>
 
-        <ul id="Listsoftasks">
-            <!--Auto add tasks -->
-        </ul>
+        </section>
+        <!-- End of Task Manager Application-->
 
-        <div class="Button">
-            <button id="NewlyAddedBtn">New Tasks</button>
-            <button id="CompletedTasksBtn">Completed Tasks</button>
-            <button id="DeletedTasksBtn">Deleted Tasks</button>
-        </div>
-    </div>
+        <!-- Show Results of Tasks-->
+        <section id="ShowTasks">
+            <div class="paper-card">
+                <div class="paper-img-group">
+                    <img 
+                    style="width: 120px;"
+                        src="Assests/checklist-1622517_1920.jpg" 
+                        alt="Check Icon">
+                        <input type="checkbox" id="">
+                </div>
+                <div class="paper-body">
+                    <h4>Tracker Name</h4>
+                    <div class="plural">
+                        <p>Date: Time</p>
+                        <p>Task Status: Verified</p>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-add">New</button>
+                        <button class="btn-approved">Completed</button>
+                        <button class="btn-cancel">Deleted</button>
+                    </div>
+                </div>
+            </div>
 
-    <script src="js/scripts.js"></script>
+        </section>
+        <!-- End Results of Tasks-->
+
+
+    </main>
+
+    <script type="module" src="./js/scripts.js"></script>
     
 </body>
 </html>

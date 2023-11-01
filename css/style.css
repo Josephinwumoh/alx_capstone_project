@@ -1,82 +1,179 @@
 
-/* css styling */
-
-:root 
+:root
 {
-    --spacing-small: 10px;
-    --spacing-medium: 15px;
-    --spacing-large: 25px; 
+    --spacing-small: 5px;
+    --spacing-medium: 10px;
+    --spacing-large: 20px;
 }
 
 body
 {
-    font-family: Arial, sans-serif;
-    background-color: blue;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: centre;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    padding: var(--spacing-small);
     height: 100vh;
+}
+
+section:first-child
+{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading
+{
+    padding: var(--spacing-small);
 }
 
 .container
 {
-    width: 70%;
-    max-width: 500px;
-    background-color: darkgreen;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: auto;
     border-radius: var(--spacing-small);
-    padding: var(--spacing-medium);
+    box-shadow: 0 0 5px purple;
 }
 
-h1
+.unit-group
 {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 3px solid black;
-    padding-bottom: var(--spacing-small);
-    background-color: rgba(255, 0, 0, 0.247);
+    display: flex;
+    gap: var(--spacing-large);
 }
 
-.Syntax-house
+.unit-control
 {
     display: flex;
     flex-direction: column;
-    margin-bottom: var(--spacing-large);
+    flex-grow: 2;
+    margin-bottom: var(--spacing-small);
 }
 
-.Syntax-house input
+.unit-control label
+{
+    font-size: 13px;
+    margin-bottom: var(--spacing-small);
+}
+
+.unit-control input
+{
+    height: 20px;
+    font-size: var(--spacing-medium);
+    padding-left: var(--spacing-small);
+    border-radius: var(--spacing-medium);
+}
+
+.btn-primary
+{
+    background-color: rgb(34, 0, 128);
+    color: whitesmoke;
+    border: none;
+}
+
+.btn-primary:hover
+{
+    cursor: pointer;
+}
+
+.paper-img-group
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: var(--spacing-small);
+}
+
+.paper-card
+{
+    border: 1px solid black;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 0 5px purple;
+    border-radius: var(--spacing-small);
+}
+
+.paper-body
 {
     padding: var(--spacing-small);
-    font-size: var(--spacing-medium);
-    border: 2px solid rgb(163, 37, 37);
-    border-radius: var(--spacing-small);
+}
+
+.paper-body h4
+{
+    margin-bottom: var(--spacing-medium);
+}
+
+.plural
+{
+    margin-bottom: var(--spacing-medium);
+    font-size: 0.9em;
+}
+
+.btn-group
+{
+    display: flex;
+    gap: var(--spacing-small);
 }
 
 button
 {
-    padding: var(--spacing-medium);
-    font-size: var(--spacing-medium);
-    background-color: rgb(123, 255, 0);
-    color: white;
+    flex-grow: 1;
+    height: 40px;
+    border-radius: var(--spacing-medium);
+}
+
+.btn-add
+{
+    background-color: darkturquoise;
+    color: whitesmoke;
     border: none;
-    border-radius: var(--spacing-small);
 }
 
-ul
+.btn-add:hover
 {
-    list-style-type: none;
-    padding: 0px;
+    cursor: pointer;
 }
 
-li
+.btn-approved
 {
-    margin: var(--spacing-small);
-    padding: var(--spacing-small);
-    background-color: chocolate;
-    border-radius: 3px;
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+}
+
+.btn-approved:hover
+{
+    cursor: pointer;
+}
+
+.btn-cancel
+{
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+}
+
+.btn-cancel:hover
+{
+    cursor: pointer;
+}
+
+.error-prompt
+{
+    border: 1px solid red;
+}
+
+#ShowTasks
+{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: var(--spacing-medium);
+    flex-wrap: wrap;
 }
